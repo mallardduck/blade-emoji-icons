@@ -5,6 +5,6 @@
     <hr />
     <section>
         MetaData
-        <x-emoji-icon::smiling-face class="h-4 w-4" />
+        <x-emoji-icon::smiling-face class="text-5xl" />
     </section>
 </article>

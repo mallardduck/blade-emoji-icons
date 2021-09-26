@@ -1,1 +1,1 @@
-<x-emoji-icon::smiling-face class="h-2 w-2" />
+<x-emoji-icon::smiling-face class="text-2xl" />
