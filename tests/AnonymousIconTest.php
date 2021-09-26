@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\View\View;
-use MallardDuck\BladeEmojiIcons\View\Components\Emoji;
-use Spatie\Emoji\Emoji as SpatieEmoji;
 
 it('can get smiling face emoji element', function () {
     $smilingEmoji = \view('anon');

@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\View\View;
-use MallardDuck\BladeEmojiIcons\View\Components\Emoji;
-use Spatie\Emoji\Emoji as SpatieEmoji;
 
 it('can render icon within end user view', function () {
     $userView = \view('test');

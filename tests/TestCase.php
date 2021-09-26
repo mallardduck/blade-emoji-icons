@@ -3,8 +3,8 @@
 namespace MallardDuck\BladeEmojiIcons\Tests;
 
 use Illuminate\Foundation\Testing\Concerns\InteractsWithViews;
-use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use MallardDuck\BladeEmojiIcons\BladeEmojiIconsServiceProvider;
+use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 class TestCase extends OrchestraTestCase
 {

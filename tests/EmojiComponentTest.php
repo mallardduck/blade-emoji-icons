@@ -23,7 +23,7 @@ it('can get smiling face emoji element', function () use ($results) {
 it('can pull the view up', function () use ($results) {
     $smilingEmoji = view('emoji-icon::emoji', [
         'attributes' => null,
-        'emoji' => SpatieEmoji::smilingFace()
+        'emoji' => SpatieEmoji::smilingFace(),
     ]);
     expect($smilingEmoji)->toBeObject()->toBeInstanceOf(View::class);
     expect($smilingEmoji->render())->toBe($results);
