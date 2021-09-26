@@ -33,30 +33,10 @@ You can install the package via composer:
 composer require mallardduck/blade-emoji-icons
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --provider="MallardDuck\BladeEmojiIcons\BladeEmojiIconsServiceProvider" --tag="blade-emoji-icons-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-```bash
-php artisan vendor:publish --provider="MallardDuck\BladeEmojiIcons\BladeEmojiIconsServiceProvider" --tag="blade-emoji-icons-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
 ## Usage
 
 ```php
-$blade-emoji-icons = new MallardDuck\BladeEmojiIcons();
-echo $blade-emoji-icons->echoPhrase('Hello, MallardDuck!');
+<x-emoji-icon::smiling-face class="text-5xl" />
 ```
 
 ## Testing
