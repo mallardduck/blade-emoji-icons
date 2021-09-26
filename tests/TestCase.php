@@ -1,26 +1,24 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace MallardDuck\BladeEmojiIcons\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
-use VendorName\Skeleton\SkeletonServiceProvider;
+use Illuminate\Foundation\Testing\Concerns\InteractsWithViews;
+use Orchestra\Testbench\TestCase as OrchestraTestCase;
+use MallardDuck\BladeEmojiIcons\BladeEmojiIconsServiceProvider;
 
-class TestCase extends Orchestra
+class TestCase extends OrchestraTestCase
 {
+    use InteractsWithViews;
+
     protected function setUp(): void
     {
         parent::setUp();
-
-        Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'VendorName\\Skeleton\\Database\\Factories\\'.class_basename($modelName).'Factory'
-        );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            SkeletonServiceProvider::class,
+            BladeEmojiIconsServiceProvider::class,
         ];
     }
 
@@ -28,9 +26,9 @@ class TestCase extends Orchestra
     {
         config()->set('database.default', 'testing');
 
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_skeleton_table.php.stub';
-        $migration->up();
-        */
+        // update default views paths
+        $viewPaths = config('view.paths');
+        $viewPaths[] = __DIR__ . '/stubs/views';
+        $app['config']->set('view.paths', $viewPaths);
     }
 }

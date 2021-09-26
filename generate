@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+if (file_exists(__DIR__.'/vendor/autoload.php')) {
+    require __DIR__.'/vendor/autoload.php';
+} else {
+    require __DIR__.'/../../autoload.php';
+}
+
+use MallardDuck\BladeEmojiIconsGenerator\Console\GenerateCommand;
+use Symfony\Component\Console\SingleCommandApplication;
+
+(new SingleCommandApplication())
+    ->setName('Blade Emoji Generator') // Optional
+    ->setVersion('1.0.0') // Optional
+    ->setCode(new GenerateCommand)
+    ->run();

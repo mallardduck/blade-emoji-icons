@@ -1,3 +1,7 @@
+!/build/tmp/.gitkeep
+!/build/.gitkeep
+/build/tmp
+/build
 .idea
 .php_cs
 .php_cs.cache

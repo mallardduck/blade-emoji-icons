@@ -12,3 +12,6 @@
 /psalm.xml          export-ignore
 /psalm.xml.dist     export-ignore
 /testbench.yaml     export-ignore
+/generator     export-ignore
+/generate     export-ignore
+/tmp     export-ignore
