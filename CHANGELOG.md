@@ -2,6 +2,11 @@
 
 All notable changes to `blade-emoji-icons` will be documented in this file.
 
+## 1.1.0 - 2021-09-27
+
+- Update to use spatie/emoji 3.0
+- Regenerate based on Emoji v14
+
 ## 1.0.1 - 2021-09-27
 
 - Update docs
