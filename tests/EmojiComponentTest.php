@@ -5,9 +5,7 @@ use MallardDuck\BladeEmojiIcons\View\Components\Emoji;
 use Spatie\Emoji\Emoji as SpatieEmoji;
 
 $results = <<<EOF
-<span >
-    ☺️
-</span>
+<span>☺️</span>
 
 EOF;
 

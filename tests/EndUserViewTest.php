@@ -14,9 +14,7 @@ it('can render icon within end user view', function () {
     <hr />
     <section>
         MetaData
-        <span class="text-5xl">
-    ☺️
-</span>
+        <span class="text-5xl">☺️</span>
     </section>
 </article>
 EOF;
