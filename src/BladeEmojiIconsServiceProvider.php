@@ -17,7 +17,6 @@ class BladeEmojiIconsServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-emoji-icon')
-            ->hasConfigFile()
             ->hasViewComponents(
                 'emoji-icon',
                 Emoji::class,
