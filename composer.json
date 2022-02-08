@@ -1,13 +1,12 @@
 {
     "name": "mallardduck/blade-emoji-icons",
     "description": "A package to use emoji as icons.",
+    "license": "MIT",
     "keywords": [
         "mallardduck",
         "laravel",
         "blade-emoji-icons"
     ],
-    "homepage": "https://github.com/mallardduck/blade-emoji-icons",
-    "license": "MIT",
     "authors": [
         {
             "name": "Dan Pock",
@@ -15,6 +14,7 @@
             "role": "Developer"
         }
     ],
+    "homepage": "https://github.com/mallardduck/blade-emoji-icons",
     "require": {
         "php": "^8.0",
         "illuminate/contracts": "^8.37 || ^9.0",
@@ -30,10 +30,12 @@
         "pestphp/pest": "^1.18",
         "pestphp/pest-plugin-laravel": "^1.1",
         "phpdocumentor/reflection-docblock": "^5.2",
-        "symfony/console": "^5.3",
+        "symfony/console": "^5.3 || ^6.0",
         "twig/twig": "^3.3",
         "vimeo/psalm": "^4.8"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "MallardDuck\\BladeEmojiIcons\\": "src"
@@ -45,16 +47,11 @@
             "MallardDuck\\BladeEmojiIcons\\Tests\\": "tests"
         }
     },
-    "scripts": {
-        "test": "./vendor/bin/pest --no-coverage",
-        "test-human": "./vendor/bin/pest --coverage",
-        "test-coverage": "./vendor/bin/pest --coverage-html build/coverage --coverage-clover build/logs/clover.xml"
-    },
     "config": {
-        "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true
-        }
+        },
+        "sort-packages": true
     },
     "extra": {
         "laravel": {
@@ -63,6 +60,9 @@
             ]
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "scripts": {
+        "test": "./vendor/bin/pest --no-coverage",
+        "test-coverage": "./vendor/bin/pest --coverage-html build/coverage --coverage-clover build/logs/clover.xml",
+        "test-human": "./vendor/bin/pest --coverage"
+    }
 }
