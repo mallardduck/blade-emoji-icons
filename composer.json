@@ -17,20 +17,19 @@
     ],
     "require": {
         "php": "^8.0",
-        "illuminate/contracts": "^8.37",
-        "illuminate/filesystem": "^8.37",
-        "illuminate/support": "^8.37",
-        "illuminate/view": "^8.37",
+        "illuminate/contracts": "^8.37 || ^9.0",
+        "illuminate/filesystem": "^8.37 || ^9.0",
+        "illuminate/support": "^8.37 || ^9.0",
+        "illuminate/view": "^8.37 || ^9.0",
         "spatie/emoji": "^3.0",
         "spatie/laravel-package-tools": "^1.5.0"
     },
     "require-dev": {
         "nunomaduro/collision": "^5.3",
-        "orchestra/testbench": "^6.15",
+        "orchestra/testbench": "^6.15 || ^7.0",
         "pestphp/pest": "^1.18",
         "pestphp/pest-plugin-laravel": "^1.1",
         "phpdocumentor/reflection-docblock": "^5.2",
-        "spatie/laravel-ray": "^1.23",
         "symfony/console": "^5.3",
         "twig/twig": "^3.3",
         "vimeo/psalm": "^4.8"
@@ -52,7 +51,10 @@
         "test-coverage": "./vendor/bin/pest --coverage-html build/coverage --coverage-clover build/logs/clover.xml"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "extra": {
         "laravel": {
