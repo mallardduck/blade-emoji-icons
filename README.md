@@ -8,6 +8,10 @@
 This package enables you to use Emoji as blade components in a similar way to BladeUiKit's Icons.
 The main difference is that these are not SVGs, but simple text as all Emoji are.
 
+## A message to Russian 🇷🇺 people
+
+If you currently live in Russia, please read [this message](./ToRussianPeople.md).
+
 ## Installation
 
 You can install the package via composer:
