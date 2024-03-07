@@ -2,6 +2,10 @@
 
 All notable changes to `blade-emoji-icons` will be documented in this file.
 
+## 1.5.0 - 2024-03-06
+
+- Updated to Emoji v15.1
+
 ## 1.4.0 - 2024-02-02
 
 - Dropped Laravel 8 support
